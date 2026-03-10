@@ -40,10 +40,10 @@
 
         directions {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp DEL   &kp INS  &kp HOME  &kp END    &kp PG_UP  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp UP   &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans   &trans    &trans     &trans     &trans
-                        &trans  &trans  &trans    &trans    &trans   &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp DEL   &kp INS  &kp HOME  &kp END    &kp PG_UP  &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp LEFT  &kp UP   &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &trans     &trans    &trans   &trans    &trans     &trans     &trans
+                          &trans  &trans  &trans     &trans    &trans   &trans
             >;
         };
 
