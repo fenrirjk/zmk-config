@@ -21,7 +21,7 @@
             tapping-term-ms = <400>;
             bindings = <&kp>, <&kp>;
             quick-tap-ms = <300>;
-        }
+        };
 
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -30,7 +30,7 @@
             tapping-term-ms = <400>;
             bindings = <&mo>, <&kp>;
             quick-tap-ms = <300>;
-        }
+        };
     };
 
     keymap {
