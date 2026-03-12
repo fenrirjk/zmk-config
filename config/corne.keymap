@@ -15,14 +15,22 @@
     behaviors {
         mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
+            display-name = "Mod-Tap";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <400>;
             bindings = <&kp>, <&kp>;
-
-            display-name = "Mod-Tap";
             quick-tap-ms = <300>;
-        };
+        }
+
+        lt: layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            display-name = "Layer-Tap";
+            flavor = "balanced";
+            tapping-term-ms = <400>;
+            bindings = <&mo>, <&kp>;
+            quick-tap-ms = <300>;
+        }
     };
 
     keymap {
