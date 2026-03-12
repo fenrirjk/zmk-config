@@ -4,12 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/behaviors.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/behaviors.h>
 
 / {
     behaviors {
@@ -19,6 +19,7 @@
             flavor = "balanced";
             tapping-term-ms = <400>;
             bindings = <&kp>, <&kp>;
+
             display-name = "Mod-Tap";
             quick-tap-ms = <150>;
         };
@@ -44,10 +45,10 @@
 
         numbers {
             bindings = <
-&none  &kp N1      &kp N2     &kp N3    &kp N4     &kp N5       &kp N6     &kp N7                  &kp N8                  &kp N9     &kp N0          &none
-&none  &kp LGUI    &kp S      &kp LALT  &kp LCTRL  &kp SPACE    &kp SPACE  &mt RCTRL LEFT_BRACKET  &mt RALT RIGHT_BRACKET  &kp MINUS  &mt RGUI EQUAL  &none
-&none  &kp ESCAPE  &kp GRAVE  &kp TAB   &kp SPACE  &kp SPACE    &kp SPACE  &kp SPACE               &kp SPACE               &kp SPACE  &kp SQT         &none
-                              &kp LALT  &kp LSHFT  &kp SPACE    &kp RET    &kp RSHIFT              &kp RALT
+&none  &kp N1      &kp N2     &kp N3    &kp N4     &kp N5          &kp N6        &kp N7                  &kp N8                  &kp N9     &kp N0          &none
+&none  &kp LGUI    &kp S      &kp LALT  &kp LCTRL  &kp SPACE       &kp SPACE     &mt RCTRL LEFT_BRACKET  &mt RALT RIGHT_BRACKET  &kp MINUS  &mt RGUI EQUAL  &none
+&none  &kp ESCAPE  &kp GRAVE  &kp TAB   &kp SPACE  &kp LEFT_ALT    &kp LEFT_ALT  &kp SPACE               &kp SPACE               &kp SPACE  &kp SQT         &none
+                              &kp LALT  &kp LSHFT  &kp SPACE       &kp RET       &kp RSHIFT              &kp RALT
             >;
         };
 
