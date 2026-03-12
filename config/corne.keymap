@@ -37,7 +37,7 @@
 
             bindings = <
 &none  &mt TAB Q  &kp W       &kp E         &kp R           &lt 2 T      &lt 2 Y  &kp U            &kp I          &kp O       &kp P               &none
-&none  &kt A      &mt LGUI S  &mt LALT D    &mt LCTRL F     &lt 1 G      &lt 1 H  &mt RCTRL J      &mt RALT K     &mt RGUI L  &mt BACKSLASH SEMI  &none
+&none  &kp A      &mt LGUI S  &mt LALT D    &mt LCTRL F     &lt 1 G      &lt 1 H  &mt RCTRL J      &mt RALT K     &mt RGUI L  &mt BACKSLASH SEMI  &none
 &none  &lt 4 Z    &kp X       &kp C         &kp V           &lt 3 B      &lt 3 N  &kp M            &kp COMMA      &kp DOT     &lt 5 SLASH         &none
                               &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &kp RIGHT_SHIFT  &kp BACKSPACE
             >;
@@ -45,9 +45,9 @@
 
         numbers {
             bindings = <
-&none  &kp N1      &kp N2     &kp N3    &kp N4     &kp N5          &kp N6            &kp N7                   &kp N8              &kp N9     &kp N0              &none
-&none  &kp LGUI    &kp S      &kp LALT  &kp LCTRL  &kp SPACE       &kp LEFT_BRACKET  &mt RCTRL RIGHT_BRACKET  &mt RALT BACKSLASH  &kp MINUS  &mt RGUI BACKSLASH  &none
-&none  &kp ESCAPE  &kp GRAVE  &kp TAB   &kp SPACE  &kp LEFT_ALT    &kp LEFT_ALT      &kp SPACE                &kp SPACE           &kp SPACE  &kp SQT             &none
+&none  &kp N1      &kp N2     &kp N3    &kp N4     &kp N5          &kp N6            &kp N7                   &kp N8              &kp N9          &kp N0         &none
+&none  &trans      &kp LGUI   &kp LALT  &kp LCTRL  &kp SPACE       &kp LEFT_BRACKET  &mt RCTRL RIGHT_BRACKET  &mt RALT BACKSLASH  &mt RGUI MINUS  &kp BACKSLASH  &none
+&none  &kp ESCAPE  &kp GRAVE  &kp TAB   &kp SPACE  &kp LEFT_ALT    &kp LEFT_ALT      &kp SPACE                &kp SPACE           &kp SPACE       &kp SQT        &none
                               &kp LALT  &kp LSHFT  &kp SPACE       &kp RET           &kp RSHIFT               &kp RALT
             >;
         };
@@ -85,6 +85,15 @@
 &trans  &out OUT_BLE    &out OUT_USB  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans        &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
                                       &trans  &trans  &trans        &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
